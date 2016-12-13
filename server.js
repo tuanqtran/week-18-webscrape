@@ -66,7 +66,7 @@ app.get("/scrape", function(req, res) {
       // result.link = $(this).siblings().find("a.storylink").attr("href");
       result.title = $(this).find("h3.article-name").text();
       result.link = $(this).parent().attr("href");
-      result.image = $(this).find("img").attr("src");
+      result.image = $(this).find("img").attr("data-pin-media");
       // result.title = $(this).children("div.listElmnt-blogItem").children("a.listElmt-storyHeadline").text();
       // result.title = $(this).find("div.listElmt-blogItem").children("a.listElmt-storyHeadline").text(); 
       // result.link = $(this).find("div.listElmt-blogItem").children("a.listElmt-storyHeadline").attr("href");
